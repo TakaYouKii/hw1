@@ -14,7 +14,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@id/et_emile"
-        android:layout_height="250dp"/>
+        android:layout_height="250dp"
+        android:contentDescription="TODO" />
 
     <EditText
         android:id="@+id/et_emile"
@@ -25,6 +26,7 @@
         android:drawableStart="@drawable/ic_baseline_person_24"
         android:drawablePadding="12dp"
         android:hint="Emile"
+        android:hintTextColor="#006064"
         android:padding="20dp"
         android:textColorHint="@color/white"
         android:textSize="20dp"
@@ -54,9 +56,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:minHeight="48dp"
-        android:text="Remember me"
-        android:textColor="@color/white"
-        android:textSize="18dp"
+        android:text="@string/remember_me"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintLeft_toLeftOf="@id/et_password"
         app:layout_constraintTop_toBottomOf="@id/et_password" />
 
@@ -68,10 +70,10 @@
         android:layout_marginRight="15dp"
         android:drawableStart="@drawable/ic_baseline_lock_24"
         android:text="Forget password"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        app:layout_constraintTop_toBottomOf="@id/et_password"
-        app:layout_constraintRight_toRightOf="@id/et_password" />
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="@id/et_password"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
 
     <Button
         android:id="@+id/btn_log_in"
@@ -81,8 +83,10 @@
         android:background="@drawable/style_corn"
         android:padding="20dp"
         android:text="LOG IN"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/check_remember_me"/>
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/check_remember_me"
+        tools:layout_editor_absoluteX="20dp" />
 
     <Button
         android:id="@+id/btn_sign_up"
@@ -93,7 +97,9 @@
         android:padding="20dp"
         android:text="SIGN UP"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/btn_log_in"/>
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_log_in"
+        tools:layout_editor_absoluteX="20dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
